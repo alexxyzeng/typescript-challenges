@@ -16,9 +16,6 @@
   > View on GitHub: https://tsch.js.org/898
 */
 
-import { Equal } from "@type-challenges/utils"
-
-
 /* _____________ Your Code Here _____________ */
 
 type Includes<T extends readonly any[], U> = T extends [infer A, ...infer B] ? Equal<A, U> extends true ? true : Includes<B, U> : false;
